@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Фембої - проєкт з курсу «Громадянська освіта»</title>
+<meta name="description" content="Шкільний проєкт про субкультуру фембоїв: що це, звідки взялося, які існують міфи — і що про це кажуть права людини.">
+<script src="theme-init.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Перейти до змісту</a>
+
+<!-- ============ МЕНЮ ============ -->
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Головне меню">
+      <a class="brand" href="#top" aria-label="Фембої — на початок сторінки">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2c.8 5.6 3.4 8.2 10 10-6.6 1.8-9.2 4.4-10 10-.8-5.6-3.4-8.2-10-10 6.6-1.8 9.2-4.4 10-10z" fill="var(--accent)" stroke="var(--stroke)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span>Фембої</span>
+      </a>
+      <ul class="nav__list" id="menu">
+        <li><a href="#who">Хто це</a></li>
+        <li><a href="#history">Історія</a></li>
+        <li><a href="#style">Стиль</a></li>
+        <li><a href="#community">Спільнота</a></li>
+        <li><a href="#myths">Міфи</a></li>
+        <li><a href="#civic">Громадянський погляд</a></li>
+        <li><a href="#finale">Висновки</a></li>
+      </ul>
+
+      <div class="nav__tools">
+        <div class="theme" role="group" aria-label="Тема оформлення">
+          <button class="theme__btn" type="button" data-set-theme="dark" aria-pressed="true" aria-label="Темна тема" title="Темна тема">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span>Темна</span>
+          </button>
+          <button class="theme__btn" type="button" data-set-theme="cotton" aria-pressed="false" aria-label="Світла тема «Цукрова вата»" title="Світла тема «Цукрова вата»">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.5 15.5a4.2 4.2 0 0 1-.6-8.35 5.4 5.4 0 0 1 10.2 1.05A3.7 3.7 0 0 1 16.7 15.5z"/><rect x="11" y="16.2" width="2" height="5.8" rx="1"/></svg>
+            <span>Цукрова вата</span>
+          </button>
+        </div>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path class="menu-btn__open" d="M4 7h16M4 12h16M4 17h16"/><path class="menu-btn__close" d="M6 6l12 12M18 6L6 18"/></svg>
+          <span>Меню</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <span class="pill" style="--i:0">Проєкт з курсу «Громадянська освіта»</span>
+      <h1 style="--i:1">Фембої</h1>
+      <p class="hero__sub" style="--i:2">Субкультура, стиль і право бути собою</p>
+      <p class="hero__lead" style="--i:3">Хто вони, звідки взялася ця субкультура - і чому розмова про неї насправді є розмовою про свободу, повагу та права людини.</p>
+      <div class="hero__cta" style="--i:4">
+        <a class="btn btn--primary" href="#who">Почати читати</a>
+        <a class="btn" href="#civic">Одразу до громадянського погляду</a>
+      </div>
+      <!-- ЗАПОВНИТИ: ім'я, клас, школа -->
+      <dl class="author" style="--i:5">
+        <div><dt>Автор</dt><dd>Михайло Чернишов Русланович</dd></div>
+        <div><dt>Група</dt><dd>П-225</dd></div>
+        <div><dt>Дата коли почав робити роботу:</dt><dd>2026.09.09</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero__visual">
+      <figure class="frame" id="photo-1" style="--ratio:4/5;--tilt:2.5deg">
+        <div class="frame__media">
+          <!-- ФОТО 1 (головне, вертикальне 4:5).
+               Щоб вставити: видали <span class="frame__ph">…</span> і встав <img src="photo-1.jpg" alt="Опис фото"> -->
+            <img src="./femboys/f1.jpg" alt="Опис фото">
+        </div>
+        <figcaption>Стиль - це спосіб розповісти про себе</figcaption>
+      </figure>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="badge-path" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+          <circle cx="100" cy="100" r="97"/>
+          <text><textPath href="#badge-path" xlink:href="#badge-path" textLength="440" lengthAdjust="spacing">самовираження • повага • свобода • </textPath></text>
+          <path class="spark" d="M100 76c3 15 8 21 24 24-16 3-21 9-24 24-3-15-8-21-24-24 16-3 21-9 24-24z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ХТО ТАКІ ФЕМБОЇ ============ -->
+<section class="section" id="who" aria-labelledby="who-title">
+  <div class="wrap">
+    <div class="who__grid">
+      <div>
+        <h2 id="who-title">Хто такі фембої</h2>
+        <p class="statement">Фембой - це хлопець або чоловік, який поєднує у своєму стилі, вигляді чи манерах риси, які суспільство зазвичай вважає «жіночними»: колір, одяг, аксесуари, макіяж чи м'якшу манеру триматися.</p>
+        <p class="note">Слово складається з <em>fem</em> (скорочення від <em>feminine</em> - «жіночний») і <em>boy</em> («хлопець»). Іноді пишуть <em>femboi</em>. Українською - «фембой», у множині «фембої».</p>
+      </div>
+
+      <figure class="frame" id="photo-2" style="--ratio:1/1;--tilt:-2deg">
+        <div class="frame__media">
+          <!-- ФОТО 2 (квадрат 1:1) -->
+          <img src="./femboys/f2.jpg" alt="Опис фото">
+        </div>
+        <figcaption>Самовираження не має єдиного «правильного» вигляду</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="terms-head">Не плутаймо поняття</h3>
+    <dl class="terms">
+      <div class="term">
+        <dt>Біологічна стать</dt>
+        <dd>Фізичні ознаки, з якими людина народилася.</dd>
+      </div>
+      <div class="term">
+        <dt>Ґендерна ідентичність</dt>
+        <dd>Внутрішнє відчуття себе хлопцем, дівчиною, обома чи жодним із цих варіантів.</dd>
+      </div>
+      <div class="term term--here">
+        <dt>Ґендерне самовираження</dt>
+        <dd>Те, як людина показує себе зовні: одяг, зачіска, макіяж, манера триматися.</dd>
+        <span class="pill">Саме про це - фембої</span>
+      </div>
+      <div class="term">
+        <dt>Сексуальна орієнтація</dt>
+        <dd>До кого людина відчуває романтичний чи емоційний потяг.</dd>
+      </div>
+    </dl>
+    <p class="terms-foot">Ці чотири речі не обов'язково пов'язані між собою. Знаючи, як людина одягається, ми ще нічого не знаємо про її ідентичність чи орієнтацію.</p>
+  </div>
+</section>
+
+<!-- ============ ІСТОРІЯ ============ -->
+<section class="section section--tint" id="history" aria-labelledby="history-title">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="history-title">Звідки це взялося</h2>
+      <p class="lead">Слово «фембой» відносно нове, а от ідея, що чоловічий образ може бути м'яким, яскравим і декоративним, - дуже давня.</p>
+    </div>
+
+    <div class="history__grid">
+      <ol class="timeline">
+        <li class="tl">
+          <div class="tl__year"><span>XVII–<wbr>XVIII</span><small>століття, Європа</small></div>
+          <div>
+            <h3>Підбори, перуки й мереживо - для чоловіків</h3>
+            <p>При європейських дворах шовк, пудра, перуки та яскраві кольори вважалися чоловічою модою. Високі підбори взагалі з'явилися як взуття для верхової їзди й були популярні саме серед чоловіків. Тобто «жіночий» і «чоловічий» одяг - не вічні категорії: їх змінюють епохи.</p>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__year"><span>1970-ті</span><small>Британія та США</small></div>
+          <div>
+            <h3>Глем-рок: андрогінність на сцені</h3>
+            <p>Музиканти на кшталт Девіда Боуї й Марка Болана виходили на сцену в блискітках, з макіяжем і яскравими костюмами. Вони показали мільйонам людей, що чоловічий образ може бути ніжним, театральним і водночас упевненим.</p>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__year"><span>1980–<wbr>2000-ті</span><small>Японія та Корея</small></div>
+          <div>
+            <h3>«Гарні хлопці» в манзі та на сцені</h3>
+            <p>У Японії популярні образи біщонен (<em>bishōnen</em>, «гарний хлопець») у манзі й аніме та естетика <em>visual kei</em> у музиці - з макіяжем і ефектними образами. У Кореї схожу естетику називають <em>kkonminam</em> - «хлопець-квітка». Ці культури вплинули на стиль, який сьогодні пов'язують із фембоями.</p>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__year"><span>1990-ті –<wbr> 2010-ті</span><small>Інтернет</small></div>
+          <div>
+            <h3>Слово з'являється й потрапляє в мережу</h3>
+            <p>Слово <em>femboy</em> відоме щонайменше з 1990-х. З розвитком інтернету його підхоплюють форуми, імиджборди, Tumblr і Reddit - так формуються перші онлайн-спільноти. Точно визначити «момент народження» слова складно.</p>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__year"><span>2020-ті</span><small>Соцмережі</small></div>
+          <div>
+            <h3>Естетика виходить у мейнстрим</h3>
+            <p>TikTok, Discord, YouTube та ігрові спільноти роблять цей стиль помітним для мільйонів людей. Хештеги на кшталт #femboyfriday потрапляють у новини. Разом із популярністю зростають і дискусії про стереотипи, повагу та безпеку в мережі.</p>
+          </div>
+        </li>
+      </ol>
+
+      <aside class="aside-card">
+        <h3>Що показує історія</h3>
+        <p>Що вважати «чоловічим» чи «жіночим» у стилі - залежить від епохи й культури. Це радше суспільні домовленості, які змінюються з часом, а не непорушні правила.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ СТИЛЬ ============ -->
+<section class="section" id="style" aria-labelledby="style-title">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="style-title">Стиль та естетика</h2>
+      <p class="lead">Єдиного «дрес-коду» не існує. Ось мотиви, які трапляються найчастіше.</p>
+    </div>
+
+    <p class="swatch-title">Кольори, які люблять найчастіше</p>
+    <ul class="swatches">
+      <li class="swatch"><i style="--c:#D5C9FF"></i>Лавандовий</li>
+      <li class="swatch"><i style="--c:#A8F0D2"></i>М'ятний</li>
+      <li class="swatch"><i style="--c:#FF9EC4"></i>Пудрово-рожевий</li>
+      <li class="swatch"><i style="--c:#FFC9A8"></i>Персиковий</li>
+      <li class="swatch"><i style="--c:#FFE45E"></i>Лимонний</li>
+    </ul>
+
+    <ul class="elements">
+      <li class="element" style="--c:var(--lilac)">
+        <h3>Одяг</h3>
+        <p>Оверсайз-худі та светри, спідниці, шорти, високі шкарпетки, шарфи - зазвичай у м'яких, комфортних силуетах.</p>
+      </li>
+      <li class="element" style="--c:var(--mint)">
+        <h3>Аксесуари</h3>
+        <p>Заколки, ланцюжки, чокери, браслети, значки та навушники - дрібні деталі, які додають характеру.</p>
+      </li>
+      <li class="element" style="--c:var(--pink)">
+        <h3>Догляд і макіяж</h3>
+        <p>Догляд за шкірою, легкий макіяж або його відсутність - усе залежить від бажання та настрою.</p>
+      </li>
+      <li class="element" style="--c:var(--peach)">
+        <h3>Запозичення</h3>
+        <p>Стиль черпає з аніме, K-pop, вінтажу, скейт-культури та естетики <em>kawaii</em> - з того, що подобається самій людині.</p>
+      </li>
+      <li class="element" style="--c:var(--butter)">
+        <h3>Манера</h3>
+        <p>Хтось обирає м'якшу манеру говорити й рухатися, хтось - ні. Обов'язкових правил тут немає.</p>
+      </li>
+      <li class="element" style="--c:var(--lilac)">
+        <h3>Вільний вибір</h3>
+        <p>Для одних це стиль на щодень, для інших - гра зі своїм образом чи творчий проєкт. Це вибір, а не «уніформа».</p>
+      </li>
+    </ul>
+
+    <div class="gallery">
+      <figure class="frame" id="photo-3" style="--ratio:3/4;--tilt:-2deg">
+        <div class="frame__media">
+          <!-- ФОТО 3 (вертикальне 3:4) -->
+          <img src="./femboys/f3.jpg" alt="Опис фото">
+        </div>
+        <figcaption>У кожного</figcaption>
+      </figure>
+      <figure class="frame" id="photo-4" style="--ratio:1/1;--tilt:1.5deg">
+        <div class="frame__media">
+          <!-- ФОТО 4 (квадрат 1:1) -->
+          <img src="./femboys/f4.jpg" alt="Опис фото">
+        </div>
+        <figcaption>Фембоя</figcaption>
+      </figure>
+      <figure class="frame" id="photo-5" style="--ratio:4/5;--tilt:-1deg">
+        <div class="frame__media">
+          <!-- ФОТО 5 (вертикальне 4:5) -->
+          <img src="./femboys/f5.jpg" alt="Опис фото">
+        </div>
+        <figcaption>свій стиль</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">Фембої не прікріплені до жодної певної групи або стилю.</p>
+  </div>
+</section>
+
+<!-- ============ СПІЛЬНОТА ============ -->
+<section class="section section--tint" id="community" aria-labelledby="community-title">
+  <div class="wrap">
+    <div class="community__top">
+      <div>
+        <h2 id="community-title">Спільнота й інтернет</h2>
+        <p class="lead">Сучасні субкультури формуються онлайн. Фембої - не виняток: пошук однодумців, обмін ідеями й мемами відбувається переважно в мережі.</p>
+        <p class="mini">Де зустрічаються спільноти</p>
+        <ul class="chips">
+          <li>TikTok</li>
+          <li>Discord</li>
+          <li>Reddit</li>
+          <li>Tumblr</li>
+          <li>YouTube</li>
+          <li>Twitch</li>
+        </ul>
+      </div>
+
+      <figure class="frame" id="photo-6" style="--ratio:3/2;--tilt:1.5deg">
+        <div class="frame__media">
+          <!-- ФОТО 6 (горизонтальне 3:2) -->
+            <img src="./femboys/f6.jpg" alt="Опис фото">
+        </div>
+        <figcaption>Спільноти живуть в інтернеті</figcaption>
+      </figure>
+    </div>
+
+    <div class="panels">
+      <div class="panel panel--mint">
+        <h3>Що дає спільнота</h3>
+        <ul>
+          <li>Підтримку й відчуття, що ти не один зі своїми інтересами.</li>
+          <li>Обмін ідеями: стиль, ілюстрації, музика, мода.</li>
+          <li>Творчість - від мемів і артів до відео та косплею.</li>
+        </ul>
+      </div>
+      <div class="panel panel--butter">
+        <h3>На що звернути увагу</h3>
+        <ul>
+          <li>Хейт і цькування в коментарях.</li>
+          <li>Стереотипи в мемах: жарт легко переходить у приниження.</li>
+          <li>Сексуалізація: слово «фембой» часто вживають і в дорослому контенті, що спотворює уявлення про тему. У нашому проєкті йдеться лише про стиль і самовираження.</li>
+          <li>Безпека: не ділися особистими даними з незнайомцями; якщо хтось тисне чи пише неприємне - розкажи дорослому, якому довіряєш.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ МІФИ ТА ФАКТИ ============ -->
+<section class="section" id="myths" aria-labelledby="myths-title">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="myths-title">Міфи та факти</h2>
+      <p class="lead">Натисни на твердження, щоб побачити, що з ним не так.</p>
+    </div>
+
+    <ul class="myths">
+      <li class="myth">
+        <button class="myth__btn" type="button" aria-expanded="false" aria-controls="fact-1">
+          <span class="tag tag--myth">Міф</span>
+          <span class="myth__q">«Фембой - це завжди гей»</span>
+          <span class="myth__icon" aria-hidden="true"></span>
+        </button>
+        <div class="myth__fact" id="fact-1"><div>
+          <div class="fact">
+            <span class="tag tag--fact">Факт</span>
+            <p>Ні. Стиль і сексуальна орієнтація - різні речі. Слово «фембой» не вказує на орієнтацію: такими можуть бути хлопці з будь-якою орієнтацією - або й без жодного «ярлика».</p>
+          </div>
+        </div></div>
+      </li>
+      <li class="myth">
+        <button class="myth__btn" type="button" aria-expanded="false" aria-controls="fact-2">
+          <span class="tag tag--myth">Міф</span>
+          <span class="myth__q">«Фембой хоче стати дівчиною»</span>
+          <span class="myth__icon" aria-hidden="true"></span>
+        </button>
+        <div class="myth__fact" id="fact-2"><div>
+          <div class="fact">
+            <span class="tag tag--fact">Факт</span>
+            <p>Не обов'язково. Багато фембоїв ідентифікують себе як хлопці й чоловіки та такими й залишаються. Ґендерна ідентичність - особиста тема, і її визначає сама людина, а не оточення.</p>
+          </div>
+        </div></div>
+      </li>
+      <li class="myth">
+        <button class="myth__btn" type="button" aria-expanded="false" aria-controls="fact-3">
+          <span class="tag tag--myth">Міф</span>
+          <span class="myth__q">«Це просто мода чи інтернет-прикол»</span>
+          <span class="myth__icon" aria-hidden="true"></span>
+        </button>
+        <div class="myth__fact" id="fact-3"><div>
+          <div class="fact">
+            <span class="tag tag--fact">Факт</span>
+            <p>Для когось це справді гра зі стилем або мем. Для когось - стала частина самовираження. Обидва варіанти мають право існувати, і жоден не дає підстав для образ.</p>
+          </div>
+        </div></div>
+      </li>
+      <li class="myth">
+        <button class="myth__btn" type="button" aria-expanded="false" aria-controls="fact-4">
+          <span class="tag tag--myth">Міф</span>
+          <span class="myth__q">«Такий стиль шкодить іншим людям»</span>
+          <span class="myth__icon" aria-hidden="true"></span>
+        </button>
+        <div class="myth__fact" id="fact-4"><div>
+          <div class="fact">
+            <span class="tag tag--fact">Факт</span>
+            <p>Одяг, аксесуари чи макіяж не порушують чиїхось прав. Шкода виникає тоді, коли людину цькують і принижують за зовнішній вигляд, - тобто з боку тих, хто не поважає відмінностей.</p>
+          </div>
+        </div></div>
+      </li>
+      <li class="myth">
+        <button class="myth__btn" type="button" aria-expanded="false" aria-controls="fact-5">
+          <span class="tag tag--myth">Міф</span>
+          <span class="myth__q">«Раніше такого не було - це нове явище»</span>
+          <span class="myth__icon" aria-hidden="true"></span>
+        </button>
+        <div class="myth__fact" id="fact-5"><div>
+          <div class="fact">
+            <span class="tag tag--fact">Факт</span>
+            <p>Слово нове, а ідея - ні. Від європейських дворів XVII століття й глем-року до японської манґи чоловіки й раніше грали з «жіночими» елементами стилю.</p>
+          </div>
+        </div></div>
+      </li>
+      <li class="myth">
+        <button class="myth__btn" type="button" aria-expanded="false" aria-controls="fact-6">
+          <span class="tag tag--myth">Міф</span>
+          <span class="myth__q">«Фембої — це про дорослий контент»</span>
+          <span class="myth__icon" aria-hidden="true"></span>
+        </button>
+        <div class="myth__fact" id="fact-6"><div>
+          <div class="fact">
+            <span class="tag tag--fact">Факт</span>
+            <p>Слово інколи вживають і в дорослому контексті, але воно не зводиться до цього. Для багатьох людей це про одяг, естетику й самовираження. Не варто судити про людину за мемами та чужими ярликами.</p>
+          </div>
+        </div></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ГРОМАДЯНСЬКИЙ ПОГЛЯД ============ -->
+<section class="section section--tint" id="civic" aria-labelledby="civic-title">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="civic-title">Громадянський погляд</h2>
+      <p class="lead">Ми не зобов'язані любити чужий стиль. Але маємо поважати право людини бути собою - доки вона не порушує прав інших.</p>
+    </div>
+
+    <div class="law">
+      <h3>Що кажуть закони</h3>
+      <p class="law__intro">Конституція України не згадує субкультури, але містить принципи, які стосуються кожного - незалежно від того, як він виглядає чи одягається.</p>
+
+      <div class="art">
+        <div class="art__num"><small>ст.</small>21</div>
+        <div>
+          <p>Усі люди вільні й рівні у своїй гідності та правах; права людини невідчужувані й непорушні.</p>
+          <p class="so"><strong>Для нашої теми:</strong> стиль людини не робить її «меншою» чи «гіршою».</p>
+        </div>
+      </div>
+      <div class="art">
+        <div class="art__num"><small>ст.</small>23</div>
+        <div>
+          <p>Кожен має право на вільний розвиток своєї особистості, якщо цим не порушуються права й свободи інших людей.</p>
+          <p class="so"><strong>Для нашої теми:</strong> обирати свій вигляд можна, доки це не шкодить іншим.</p>
+        </div>
+      </div>
+      <div class="art">
+        <div class="art__num"><small>ст.</small>24</div>
+        <div>
+          <p>Громадяни рівні перед законом. Не може бути привілеїв чи обмежень за ознакою статі, переконань та іншими ознаками.</p>
+          <p class="so"><strong>Для нашої теми:</strong> закон однаковий для всіх, незалежно від стилю.</p>
+        </div>
+      </div>
+      <div class="art">
+        <div class="art__num"><small>ст.</small>28</div>
+        <div>
+          <p>Кожен має право на повагу до своєї гідності.</p>
+          <p class="so"><strong>Для нашої теми:</strong> глузування та приниження - це неповага до гідності людини.</p>
+        </div>
+      </div>
+      <p class="law__foot">Це стислий переказ. Точні формулювання статей - у тексті Конституції України (посилання в розділі «Джерела»). Схожі ідеї закріплені й у Загальній декларації прав людини (1948).</p>
+    </div>
+
+    <div class="rule">
+      <p>Свобода однієї людини закінчується там, де починається свобода іншої.</p>
+      <p>Це і є межа, про яку йдеться в статті 23: свобода самовираження - не дозвіл ображати, і водночас чужа відмінність - не привід для образ.</p>
+    </div>
+
+    <div class="duo">
+      <div class="panel panel--lilac">
+        <h3>Я маю право</h3>
+        <ul>
+          <li>Обирати власний стиль і зовнішній вигляд.</li>
+          <li>Не зазнавати приниження та глузувань.</li>
+          <li>Мати власну думку про будь-яку субкультуру.</li>
+        </ul>
+      </div>
+      <div class="panel panel--pink">
+        <h3>Я відповідаю за</h3>
+        <ul>
+          <li>Свої слова й дії щодо інших людей.</li>
+          <li>Те, що поширюю: образливі меми й чутки.</li>
+          <li>Критику: обговорювати ідеї можна, принижувати людей - ні.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="definition"><strong>Толерантність</strong> - це не обов'язок погоджуватися чи наслідувати. Це готовність визнавати право іншої людини бути іншою.</p>
+
+    <div class="bully">
+      <div>
+        <h3>Цькування (булінг)</h3>
+        <p>Насмішки, образи, ізоляція, погрози чи приниження - зокрема в чатах і соцмережах - можуть бути булінгом. Через зовнішній вигляд і стиль цькують нерідко.</p>
+        <p>В Україні діє Закон № 2657-VIII від 18 грудня 2018 року, який зобов'язує заклади освіти реагувати на такі випадки та передбачає відповідальність за булінг.</p>
+      </div>
+      <div>
+        <ol class="steps">
+          <li><span><strong>Не мовчи.</strong> Розкажи дорослому, якому довіряєш: класному керівнику, психологу, батькам.</span></li>
+          <li><span><strong>Не долучайся.</strong> Не смійся й не пересилай образливе.</span></li>
+          <li><span><strong>Підтримай.</strong> Напиши людині, яку цькують: вона не сама.</span></li>
+          <li><span><strong>Збережи докази.</strong> Скриншоти й дати допоможуть розібратися.</span></li>
+        </ol>
+        <div class="help">
+          <p>Національна дитяча «гаряча» лінія - безкоштовно й анонімно</p>
+          <strong>116 111</strong>
+          <p>з мобільного, або 0 800 500 225</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="discuss">
+      <h3>Питання для обговорення в класі</h3>
+      <ul class="qs">
+        <li class="q">Чи має школа право обмежувати стиль одягу учнів? Де межа між правилами й свободою самовираження?</li>
+        <li class="q">Чим відрізняється «мені це не подобається» від «це треба заборонити»?</li>
+        <li class="q">Як соцмережі впливають на стереотипи про субкультури?</li>
+        <li class="q">Що я можу зробити, якщо бачу, як когось цькують за зовнішній вигляд?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ВИСНОВКИ ============ -->
+<section class="finale" id="finale" aria-labelledby="finale-title">
+  <div class="wrap">
+    <h2 id="finale-title">Висновки</h2>
+    <p class="finale__big">Фембої - не «проблема» і не «діагноз», а одна з багатьох форм самовираження в сучасному суспільстві.</p>
+    <ul class="takeaways">
+      <li>Стиль, ґендерна ідентичність і сексуальна орієнтація - різні речі, і не варто їх плутати.</li>
+      <li>Уявлення про «чоловіче» та «жіноче» в одязі змінюються з часом і залежать від культури.</li>
+      <li>Повага до гідності іншої людини - основа громадянського суспільства.</li>
+    </ul>
+    <p class="finale__end">Нам не обов'язково однаково одягатися. Але ми можемо однаково поважати одне одного.</p>
+  </div>
+</section>
+
+<!-- ============ ДЖЕРЕЛА ============ -->
+<section class="section" id="sources" aria-labelledby="sources-title">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="sources-title">Джерела</h2>
+    </div>
+    <!-- Перевір посилання й додай свої джерела, якщо цього вимагає вчитель -->
+    <ul class="sources">
+      <li><a href="https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80" target="_blank" rel="noopener noreferrer"><strong>Конституція України</strong><small>zakon.rada.gov.ua</small></a></li>
+      <li><a href="https://zakon.rada.gov.ua/laws/show/2657-19" target="_blank" rel="noopener noreferrer"><strong>Закон № 2657-VIII «Про внесення змін до деяких законодавчих актів України щодо протидії булінгу (цькуванню)»</strong><small>zakon.rada.gov.ua</small></a></li>
+      <li><a href="https://zakon.rada.gov.ua/laws/show/995_015" target="_blank" rel="noopener noreferrer"><strong>Загальна декларація прав людини</strong><small>zakon.rada.gov.ua</small></a></li>
+      <li><a href="https://www.dictionary.com/e/gender-sexuality/femboy/" target="_blank" rel="noopener noreferrer"><strong>Femboy — походження й значення слова</strong><small>dictionary.com</small></a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Femboy" target="_blank" rel="noopener noreferrer"><strong>Femboy</strong><small>Вікіпедія (англ.)</small></a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Glam_rock" target="_blank" rel="noopener noreferrer"><strong>Glam rock</strong><small>Вікіпедія (англ.)</small></a></li>
+      <li><a href="https://en.wikipedia.org/wiki/High-heeled_shoe" target="_blank" rel="noopener noreferrer"><strong>High-heeled shoe</strong><small>Вікіпедія (англ.)</small></a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Visual_kei" target="_blank" rel="noopener noreferrer"><strong>Visual kei</strong><small>Вікіпедія (англ.)</small></a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Bish%C5%8Dnen" target="_blank" rel="noopener noreferrer"><strong>Bishōnen</strong><small>Вікіпедія (англ.)</small></a></li>
+      <li><a href="https://la-strada.org.ua" target="_blank" rel="noopener noreferrer"><strong>Національна дитяча «гаряча» лінія - ГО «Ла Страда-Україна»</strong><small>la-strada.org.ua</small></a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <p>Проєкт створено в межах курсу «Громадянська освіта». Автор: Чернишов Михайло Русланович, П-225, закінчив робити сайт: 2026.09.21.</p>
+    <a class="btn" href="#top">Нагору</a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
